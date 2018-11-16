@@ -1,0 +1,122 @@
+@import "../../node_modules/bootstrap/scss/bootstrap";
+$break-large: 1400px;
+
+body {
+  background-image: url("../images/chrismas.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.form {
+  margin-top: 11rem !important;
+  margin-left: 10rem !important;
+}
+
+.messages-enter {
+  opacity: 0.01;
+  transform: translate(-400px) rotateY(0deg);
+}
+
+.messages-enter.messages-enter-active {
+  opacity: 1;
+  transform: translate(0) rotateY(360deg);
+  transition: all 300ms ease-in;
+}
+
+.messages-leave {
+  transform: translate(0) rotateY(0deg);
+  background-color: red;
+  opacity: 1;
+}
+
+.messages-leave.messages-leave-active {
+  transform: translate(-400px) rotateY(360deg);
+  background-color: rgb(194, 223, 29);
+  opacity: 0.01;
+  transition: all 300ms ease-in;
+}
+
+@keyframes moveMsg {
+  0% {
+    transform: scale(0.5);
+  }
+  
+  50% {
+    transform: scale(1.3);
+  }
+  100% {
+    transform: scale(0.5);
+  }
+}
+
+.takepresent {
+  color: rgb(241, 241, 161);
+}
+
+.takepresent-appear {
+  -webkit-animation: moveMsg 700ms infinite; /* Safari 4+ */
+  -moz-animation: moveMsg 700ms infinite; /* Fx 5+ */
+  -o-animation: moveMsg 700ms infinite; /* Opera 12+ */
+  animation: moveMsg 700ms infinite;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 2;
+}
+
+.takepresent-appear.example-appear-active {
+  -webkit-animation: moveMsg 700ms infinite; /* Safari 4+ */
+  -moz-animation: moveMsg 700ms infinite; /* Fx 5+ */
+  -o-animation: moveMsg 700ms infinite; /* Opera 12+ */
+  animation: moveMsg 700ms infinite;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 2;
+}
+
+.takepresent-enter {
+  -webkit-animation: moveMsg 700ms infinite; /* Safari 4+ */
+  -moz-animation: moveMsg 700ms infinite; /* Fx 5+ */
+  -o-animation: moveMsg 700ms infinite; /* Opera 12+ */
+  animation: moveMsg 700ms infinite;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 2;
+}
+
+.takepresent-enter.take-present-enter-active {
+  -webkit-animation: moveMsg 700ms infinite; /* Safari 4+ */
+  -moz-animation: moveMsg 700ms infinite; /* Fx 5+ */
+  -o-animation: moveMsg 700ms infinite; /* Opera 12+ */
+  animation: moveMsg 700ms infinite;
+  animation-iteration-count: 2;
+  animation-timing-function: ease-in-out;
+}
+
+.badge {
+  top: 6rem !important;
+  left: 30rem !important;
+  z-index: 1024 !important;
+  @media screen and (min-width: $break-large) {
+    left: 41.5rem !important;
+  }
+}
+
+span {
+  border-radius: 50% !important;
+  cursor: pointer;
+}
+span:hover {
+  background-color: rgb(241, 241, 161) !important;
+}
+
+h5 {
+  margin-bottom: 0px !important;
+}
+.card{
+  min-width: 280px !important;
+}
+
+.present{
+  margin-left: 80px;
+  margin-top: -50px;
+  width: 30px;
+  height: 30px;
+  
+}
