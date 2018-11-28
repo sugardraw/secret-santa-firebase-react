@@ -1,6 +1,6 @@
 ## Secret Santa
 
-Log in our the Secret Santa Claus!. For this project i used :
+Join our Secret Santa!. For this project i used :
 
 1. React
 2. Bootstrap
